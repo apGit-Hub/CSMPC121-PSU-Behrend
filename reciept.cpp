@@ -35,3 +35,40 @@ int main(){
     }
     cout<<"\n+---------+-------+\n|TOTAL:    $"<< setw(6)<< setprecision(2)<<fixed<<total<<"|\n+---------+-------+";
 }
+
+/*
+Enter the names of 3 one-word items to purchase (each name must be less than 10 letters long): 
+
+Gum 
+
+Flour 
+
+Oranges
+
+You have purchased 3 items. Enter their prices in US dollars (must be less than $1000): 
+
+.75
+
+6
+
+19.99
+
++---------+-------+
+
+|     RECEIPT     |
+
++---------+-------+
+
+|Gum      |$  0.75|
+
+|Flour    |$  6.00|
+
+|Oranges  |$ 19.99|
+
++---------+-------+
+
+|TOTAL:    $    26|
+
++---------+-------+
+
+*/
