@@ -37,7 +37,7 @@ int main() {
     for (int i = 0; i < 3; i++) {
         //Output of each item
         cout << "\n|" << setw(9) << left << items[i];
-        cout << "|" << setw(15 - to_string(price[i]).length()) << right << "$" << setprecision(2) << fixed << price[i] << "|";
+        cout << "|" << setw(11 - to_string(price[i]).length()) << right << "$" << setprecision(2) << fixed << price[i] << "|";
     }
     //Total output
     cout << "\n+---------+-------+\n|TOTAL:" << setw(15 - to_string(total).length()) << right << "$" << setprecision(2) << fixed << total << "|\n+---------+-------+";
