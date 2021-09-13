@@ -28,11 +28,10 @@ int main(){
     }
     
     cout<<"+---------+-------+\n|     RECEIPT     |\n+---------+-------+";
-    int total;
+    int total=price[0]+price[1]+price[2];
     for(int i=0; i<3; i++){ 
         cout<<"\n|"<<setw(9)<<left<< items[i];
         cout<<"|$"<<setw(6)<<right<<setprecision(2)<<fixed<<price[i]<<"|";
-        total+=price[i];
     }
-    cout<<"\n+---------+-------+\n|TOTAL:    $"<< setw(5)<< setprecision(2)<<fixed<<total<<"|\n+---------+-------+";
+    cout<<"\n+---------+-------+\n|TOTAL:    $"<< setw(6)<< setprecision(2)<<fixed<<total<<"|\n+---------+-------+";
 }
