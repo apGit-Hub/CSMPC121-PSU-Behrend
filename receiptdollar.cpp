@@ -51,5 +51,43 @@ int main(){
             wIndex=to_string(total).length()-5;
         else wIndex = to_string(total).length();
     //Total output
-    cout<<"\n+---------+-------+\n|TOTAL:    "<< setw(7-wIndex)<<right<<"$"<<setprecision(2)<<fixed<<total<<"|\n+---------+-------+";
+    cout<<"\n+---------+-------+\n|TOTAL:"<< setw(10-wIndex)<<right<<"$"<<setprecision(2)<<fixed<<total<<"|\n+---------+-------+";
 }
+
+/*
+Enter the names of 3 one-word items to purchase (each name must be less than 10 letters long): 
+
+Candy 
+
+Sneakers
+
+Cellphone
+
+You have purchased 3 items. Enter their prices in US dollars (must be less than $1000): 
+
+.99
+
+75
+
+949.99
+
++---------+-------+
+
+|     RECEIPT     |
+
++---------+-------+
+
+|Candy    |  $0.99|
+
+|Sneakers | $75.00|
+
+|Cellphone|$949.99|
+
++---------+-------+
+
+|TOTAL:   $1025.98|
+
++---------+-------+
+
+
+*/
