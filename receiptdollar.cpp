@@ -29,21 +29,18 @@ int main() {
         }
         else price[i] = insertd;
     }
+    double total = price[0] + price[1] + price[2];
 
     //Output of the reciept
     cout << "+---------+-------+\n|     RECEIPT     |\n+---------+-------+";
 
     for (int i = 0; i < 3; i++) {
-        int wIndex = to_string(price[i]).length() - 5;
         //Output of each item
         cout << "\n|" << setw(9) << left << items[i];
-        cout << "|" << setw(6 - wIndex) << right << "$" << setprecision(2) << fixed << price[i] << "|";
+        cout << "|" << setw(15 - to_string(price[i]).length()) << right << "$" << setprecision(2) << fixed << price[i] << "|";
     }
-    //Total price
-    double total = price[0] + price[1] + price[2];
-    int wIndex= to_string(total).length() - 5;
     //Total output
-    cout << "\n+---------+-------+\n|TOTAL:" << setw(10 - wIndex) << right << "$" << setprecision(2) << fixed << total << "|\n+---------+-------+";
+    cout << "\n+---------+-------+\n|TOTAL:" << setw(15 - to_string(total).length()) << right << "$" << setprecision(2) << fixed << total << "|\n+---------+-------+";
 }
 
 /*
